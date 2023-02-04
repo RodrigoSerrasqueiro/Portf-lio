@@ -21,7 +21,7 @@ html{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-image: url(./nubelson-fernandes-iE71-TMrrkE-unsplash.jpg);
+  background-image: url(./inicio-background.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -115,7 +115,7 @@ li:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('./wp3377158.webp');
+  background-image: url(./apresentação-background.webp);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -172,19 +172,19 @@ li:hover{
   transform: scale(1.2);
 }
 #facebook{
-  background-image: url('./facebook.png');
+  background-image: url(./facebook.png);
   background-size: cover;
 }
 #instagram{
-  background-image: url('./instagram.png');
+  background-image: url(./instagram.png);
   background-size: cover;
 }
 #linkedin{
-  background-image: url('./linkedin.png');
+  background-image: url(./linkedin.png);
   background-size: cover;
 }
 #github{
-  background-image: url('./github.png');
+  background-image: url(./github.png);
   background-size: cover;
 }
 .divider{
@@ -216,31 +216,31 @@ h4{
   border-radius: 10px;
 }
 #html{
-  background-image: url('./html.png');
+  background-image: url(./html.png);
   background-size: cover;
   background-color: orange;
 }
 #css{
-  background-image: url('./css-3.png');
+  background-image: url(./css-3.png);
   background-size: cover;
   background-color: lightblue;
 }
 #java-script{
-  background-image: url('./script-java.png');
+  background-image: url(./script-java.png);
   background-size: cover;
   background-color: yellow;
 }
 #node{
-  background-image: url('./node-js.png');
+  background-image: url(./node-js.png);
   background-size: cover;
   background-color: lightgreen;
 }
 #react{
-  background-image: url('./physics.png');
+  background-image: url(./react.png);
   background-size: cover;
 }
 #api{
-  background-image: url('./api.png');
+  background-image: url(./api.png);
   background-size: cover;
   background-color: rgb(200, 200, 200);
 }
@@ -284,7 +284,7 @@ h4{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./Notebook.jpg');
+  background-image: url(./projetos-background.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -338,6 +338,8 @@ h4{
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 14px;
+  text-align: justify;
+  margin-right: 10px;
 }
 .contact-content{
   height: 100%;
@@ -345,7 +347,7 @@ h4{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('./wall344453.jpg');
+  background-image: url(./contato-background.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
