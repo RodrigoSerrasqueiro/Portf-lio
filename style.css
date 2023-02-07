@@ -38,7 +38,8 @@ h1{
 nav{
   width: 50%;
   position: fixed;
-  left: 250px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 ul{
@@ -231,18 +232,18 @@ h4{
   background-color: yellow;
 }
 #node{
-  background-image: url(./node-js.png);
+  background-image: url(./git.png);
   background-size: cover;
-  background-color: lightgreen;
+  background-color: #fff;
 }
 #react{
   background-image: url(./react.png);
   background-size: cover;
 }
 #api{
-  background-image: url(./api.png);
+  background-image: url(./github.png);
   background-size: cover;
-  background-color: rgb(200, 200, 200);
+  background-color: #fff;
 }
 .profile-sinopse{
   width: 430px;
@@ -413,4 +414,49 @@ textarea{
   color: #fff;
 }
 
+/*responsividade*/
+@media (max-width: 468px) {
+  body{
+    overflow-x: hidden;
+  }
+  .hero-container{
+    justify-content: space-between;
+    padding: 10px 30px;
+    text-align: center;
+    max-width: 100%;
+  }
+  nav{
+    display: none;
+  }
+  .profile-container{
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  .profile-content{
+    width: 100%;
+  }
+  .profile-card{
+    border-radius: 0%;
+    width: 90%;
+    margin-top: 0;
+  }
+  .profile-sinopse{
+    margin: 0;
+    width: 95%;
+  }
+  .project-content{
+    display: none;
+  }
+  form{
+    width: 90%;
+    height: 80%;
+  }
+  #input-textarea{
+    min-width: 95%;
+    min-height: 170px;
+    max-width: 95%;
+    max-height: 170px;
+  }
+}
 
