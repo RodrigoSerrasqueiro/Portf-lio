@@ -15,6 +15,12 @@
 html{
   scroll-behavior: smooth;
 }
+header{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 40px;
+}
 .hero-container{
   height: 100vh;
   display: flex;
@@ -231,19 +237,19 @@ h4{
   background-size: cover;
   background-color: yellow;
 }
-#node{
-  background-image: url(./git.png);
+#git{
+  background-image: url(./git.jpg);
   background-size: cover;
-  background-color: #fff;
+  background-color: tomato;
 }
 #react{
   background-image: url(./react.png);
   background-size: cover;
 }
-#api{
-  background-image: url(./github.png);
+#github2{
+  background-image: url(./github2.png);
   background-size: cover;
-  background-color: #fff;
+  background-position-y: 50%;
 }
 .profile-sinopse{
   width: 430px;
@@ -425,8 +431,28 @@ textarea{
     text-align: center;
     max-width: 100%;
   }
-  nav{
-    display: none;
+  .menu{
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  .menu.ativo .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu.ativo .bar:nth-child(2){
+    opacity: 0;
+  }
+  .menu.ativo .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #D870DB;
+    margin: 5px auto;
   }
   .profile-container{
     flex-direction: column;
@@ -457,6 +483,35 @@ textarea{
     min-height: 170px;
     max-width: 95%;
     max-height: 170px;
+  }
+  nav{
+    width: 50%;
+    position: static;
+    transform: none;
+    padding: 18px 20px;
+  }
+  .nav-menu{
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 90%;
+    height: 95%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    gap: -10px;
+    transition: 0.3s;
+  }
+  .nav-menu.ativo{
+    right: 0%;
+  }
+  li{
+    color: #000;
+  }
+  .tecnologies{
+    width: 23%;
+    height: 105%;
   }
 }
 
