@@ -7,6 +7,7 @@
   <title>Rodrigo Serrasqueiro | portfólio</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./favicon.png">
+  <script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <section class="hero-container" id="index">
@@ -110,47 +111,37 @@
 
   <section class="content-container" id="projects">
     <div class="project-container">
-      <div class="project-content">
-
-        <div class="position-container right">
-          <a href="https://rodrigoserrasqueiro.github.io/Tempo-Agora/" target="_blank">
-            <div class="project-card">
-              <image class="project-image" src="./projeto-tempo-agora.png" />
-              <p class="project-text">
-                Esse projeto mostra informações sobre o clima da cidade atual ou de qualquer
-                outra em tempo real. As informações são extraídas a partir da API OpenWeatherMap
-                e foi construída usando HTML5, CSS3 e JavaScript. Totalmente responsivo e interativo,
-                saudação e cor de fundo podem mudar dependendo do horário em que for acessado.
-              </p>
+      <div class="slider">
+        <div class="slides-img">
+          <a href="https://github.com/RodrigoSerrasqueiro/Tempo-Agora" target="_blank">
+            <div class="projects-img" id="current-img">
+              <img src="./projeto-tempo-agora.png" alt="imagem do projeto">
             </div>
           </a>
-        </div>
-        
-        <div class="position-container left">
-          <div class="project-card card-reverse">
-            <image class="project-image image-reverse" src="./projeto-clone-youtube.JPG" />
-            <p class="project-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-              when an unknown printer took a galley of type and scrambled it to make a type 
-              specimen book. It has survived not only five centuries, but also the leap into.
-            </p>
+          <div class="projects-img">
+            <img src="./projeto-clone-youtube.JPG" alt="imagem do projeto">
+          </div>
+          <div class="projects-img">
+            <img src="./projeto-portfolio.JPG" alt="imagem do projeto">
           </div>
         </div>
-        
-        <div class="position-container right">
-          <div class="project-card">
-            <image class="project-image" src="./projeto-portfolio.JPG" />
-            <p class="project-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-              when an unknown printer took a galley of type and scrambled it to make a type 
-              specimen book. It has survived not only five centuries, but also the leap into.
-            </p>
-          </div>
+        <div class="radios">
+          <div class="current-radio" id="radio-0"></div>
+          <div id="radio-1"></div>
+          <div id="radio-2"></div>
         </div>
-
       </div>
+      <div class="btn-container">
+        <div class="slides-btn" id="btn-back">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slides-btn" id="btn-next">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+      <span class="projects-description">*Ao clicar no projeto você será redirecionado ao GitHub. Caso queira visualizar 
+        a aplicação em seu navegador, vá até o arquivo README.md e lá você encontrará o link.
+      </span>
     </div>
   </section>
 

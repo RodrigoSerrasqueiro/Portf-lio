@@ -289,6 +289,7 @@ h4{
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url(./projetos-background.jpg);
@@ -297,56 +298,72 @@ h4{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.project-content{
-  width: 95%;
-  height: 80%;
-  display: grid;
-  grid-template-rows: repeat(1fr, 3);
-}
-.position-container{
-  width: 100%;
-  display: flex;
-}
-.right{
-  justify-content: flex-end;
-}
-.left{
-  justify-content: flex-start;
-}
-.project-card{
-  width: 550px;
-  height: 200px;
-  background-color: #000;
-  box-shadow: 10px 10px 5px #D870DB;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  transition: 1s;
-}
-.project-card:hover{
-  transform: scale(1.05)
-}
-.card-reverse{
-  flex-direction: row-reverse;
-}
-.project-image{
-  width: 300px;
-  height: auto;
-  position: relative;
-  border-radius: 8px;
-  right: 20px;
-  top: 20px;
-}
-.image-reverse{
-  left: 20px;
-}
-.project-text{
-  color: #fff;
+.projects-description{
   font-family: 'Oswald', sans-serif;
   font-size: 14px;
-  text-align: justify;
-  margin-right: 10px;
+  color: #D870DB;
+}
+.slider{
+  width: 1024px;
+  height: 576px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+.slider:hover{
+  cursor: pointer;
+}
+.slides-img{
+  width: 5120px;
+  display: flex;
+}
+.projects-img img{
+  width: 1024px;
+  height: 576px;
+  transition: transform 1s ease-in-out;
+}
+.slides-btn{
+  color: #D870DB;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.7em;
+  margin-top: -5px;
+  transition: 0.5s;
+}
+.slides-btn:hover{
+  transform: scale(1.5);
+}
+.btn-container{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+}
+.radios{
+  width: 1024px;
+  display: flex;
+  justify-content: center;
+  margin-top: -45px;
+}
+.radios div{
+  border: 3px solid #D870DB;
+  padding: 6px;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.radios div:hover{
+  background-color: #D870DB;
+}
+.current-radio{
+  background-color: #D870DB;
 }
 .contact-content{
   height: 100%;
@@ -422,9 +439,6 @@ textarea{
 
 /*responsividade*/
 @media (max-width: 468px) {
-  body{
-    overflow-x: hidden;
-  }
   .hero-container{
     justify-content: space-between;
     padding: 10px 30px;
@@ -435,7 +449,7 @@ textarea{
     cursor: pointer;
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 40px;
   }
   .menu.ativo .bar:nth-child(1){
     transform: translateY(8px) rotate(45deg);
@@ -505,6 +519,7 @@ textarea{
   }
   .nav-menu.ativo{
     right: 0%;
+    z-index: 2;
   }
   li{
     color: #000;
@@ -513,5 +528,27 @@ textarea{
     width: 23%;
     height: 105%;
   }
+  .slider{
+    width: 340px;
+    height: 200px;
+  }
+  .projects-img img{
+    width: 340px;
+    height: 200px;
+  }
+  .projects-description{
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    margin: 10px;
+  }
+  .btn-container{
+    margin: 20px;
+  }
+  #btn-back{
+    color: #fff;
+  }
+  #btn-next{
+    color: #fff;
+  }
 }
-

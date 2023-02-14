@@ -1,3 +1,4 @@
+//validação formulário de contato
 const telefone = document.getElementById('input-fone')
 telefone.addEventListener('keypress', () => {
   let inputlength = telefone.value.length
@@ -22,7 +23,9 @@ document.getElementById("input-fone").addEventListener("keypress", function(evt)
   if (charCode > 31 && (charCode < 48 || charCode > 57))
       evt.preventDefault();
 });
+//FIM validação formulário de contato
 
+//Menu responsivo
 const Menu = document.querySelector('.menu')
 const Bar = document.querySelector('.nav-menu')
 
@@ -36,4 +39,50 @@ document.querySelectorAll('a').forEach(a => {
     Bar.classList.remove('ativo');
   });
 });
+//FIM menu responsivo
 
+//Slider de projetos
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.projects-img');
+const prevBtn = document.querySelector('#btn-back');
+const nextBtn = document.querySelector('#btn-next');
+const radios = document.querySelectorAll('.radios div');
+let slideIndex = 0;
+
+function showSlide(n) {
+  slides.forEach(slide => {
+    slide.style.transform = `translateX(-${n * 100}%)`;
+    slide.style.transition = 'transform 1s ease-in-out';
+  });
+  radios.forEach(radio => {
+    radio.classList.remove('current-radio');
+  });
+  radios[n].classList.add('current-radio');
+}
+
+function nextSlide() {
+  slideIndex++;
+  if (slideIndex > slides.length - 1) {
+    slideIndex = 0;
+  }
+  showSlide(slideIndex);
+}
+
+function prevSlide() {
+  slideIndex--;
+  if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
+  }
+  showSlide(slideIndex);
+}
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+radios.forEach((radio, index) => {
+  radio.addEventListener('click', () => {
+    slideIndex = index;
+    showSlide(slideIndex);
+  });
+});
+//FIM slider projetos
