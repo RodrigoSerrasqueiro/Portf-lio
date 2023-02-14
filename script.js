@@ -46,7 +46,6 @@ const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.projects-img');
 const prevBtn = document.querySelector('#btn-back');
 const nextBtn = document.querySelector('#btn-next');
-const radios = document.querySelectorAll('.radios div');
 let slideIndex = 0;
 
 function showSlide(n) {
@@ -54,10 +53,6 @@ function showSlide(n) {
     slide.style.transform = `translateX(-${n * 100}%)`;
     slide.style.transition = 'transform 1s ease-in-out';
   });
-  radios.forEach(radio => {
-    radio.classList.remove('current-radio');
-  });
-  radios[n].classList.add('current-radio');
 }
 
 function nextSlide() {
@@ -78,11 +73,4 @@ function prevSlide() {
 
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
-
-radios.forEach((radio, index) => {
-  radio.addEventListener('click', () => {
-    slideIndex = index;
-    showSlide(slideIndex);
-  });
-});
 //FIM slider projetos
