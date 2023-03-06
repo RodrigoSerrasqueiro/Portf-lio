@@ -27,7 +27,7 @@ header{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-image: url(./inicio-background.jpg);
+  background-image: url(./assets/inicio-background.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,7 +122,7 @@ li:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(./apresentação-background.webp);
+  background-image: url(./assets/apresentação-background.webp);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -179,19 +179,19 @@ li:hover{
   transform: scale(1.2);
 }
 #facebook{
-  background-image: url(./facebook.png);
+  background-image: url(./assets/facebook.png);
   background-size: cover;
 }
 #instagram{
-  background-image: url(./instagram.png);
+  background-image: url(./assets/instagram.png);
   background-size: cover;
 }
 #linkedin{
-  background-image: url(./linkedin.png);
+  background-image: url(./assets/linkedin.png);
   background-size: cover;
 }
 #github{
-  background-image: url(./github.png);
+  background-image: url(./assets/github.png);
   background-size: cover;
 }
 .divider{
@@ -223,31 +223,31 @@ h4{
   border-radius: 10px;
 }
 #html{
-  background-image: url(./html.png);
+  background-image: url(./assets/html.png);
   background-size: cover;
   background-color: orange;
 }
 #css{
-  background-image: url(./css-3.png);
+  background-image: url(./assets/css-3.png);
   background-size: cover;
   background-color: lightblue;
 }
 #java-script{
-  background-image: url(./script-java.png);
+  background-image: url(./assets/script-java.png);
   background-size: cover;
   background-color: yellow;
 }
 #git{
-  background-image: url(./git.jpg);
+  background-image: url(./assets/git.jpg);
   background-size: cover;
   background-color: tomato;
 }
 #react{
-  background-image: url(./react.png);
+  background-image: url(./assets/react.png);
   background-size: cover;
 }
 #github2{
-  background-image: url(./github2.png);
+  background-image: url(./assets/github2.png);
   background-size: cover;
   background-position-y: 50%;
 }
@@ -292,7 +292,7 @@ h4{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(./projetos-background.jpg);
+  background-image: url(./assets/projetos-background.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -351,7 +351,7 @@ h4{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(./contato-background.jpg);
+  background-image: url(./assets/contato-background.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
